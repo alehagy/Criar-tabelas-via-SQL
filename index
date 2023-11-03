@@ -1,0 +1,9 @@
+/* database criada no mysql*/
+
+create database escola;
+/*indique q ira se conectar ao banco*/
+use escola;
+/*criacao de uma tabela*/
+create table aluno (id int unsigned not null auto_increment, nome varchar(40) not null, matricula varchar(40) not null, email varchar(40) not null, endereco varchar(40) not null, primary key (id) );
+/*verificacao da estrutura da tabele*/
+desc aluno;
